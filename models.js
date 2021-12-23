@@ -46,7 +46,7 @@ const Transaction = mongoose.model(
 const TransactionDetail = mongoose.model(
   "TransactionDetail",
   mongoose.Schema({
-    location: {
+    Item: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "Item",
     },

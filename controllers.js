@@ -202,7 +202,7 @@ export const TransactionDetailController = {
   readById: async (req, res) => {
     try {
       const id = req.params.id;
-      const transactionDetail = await Item.findById(id).populate("location");
+      const transactionDetail = await Item.findById(id).populate("item");
       res.status(200).json({
         message: "Success get transaction detail",
         data: transactionDetail,
